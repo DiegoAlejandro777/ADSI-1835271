@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectores Basicos</title>
+	<style>
+		/* Selector Universal (Tod) */
+		* {
+			border: 1px dashed gray;
+		}	
+		/* Slector Tipo Etiqeuta */
+		h1 {
+			color:  purple;
+		}
+		/* Slector Descendente */
+		ul li {
+			color:  green;
+			background-color: silver;
+			margin: 4px;
+		}
+		/* Selector de Clase*/
+		.amarillo{
+			background-color: yellow;
+			color: black;
+		}
+		/* Selector de Identificacion */
+		#azul {
+			background-color: blue;
+			color: white;
+		}
+		/* Slector Combinado */
+		ul.colores li.rojo{
+			background-color: red;
+			color: black; 
+		}
+		
+	</style>
+</head>
+<body>
+	<h1> Slectores Basicos </h1>
+	<ul class="colores">
+		<li class="amarillo">Amarillo</li>
+		<li id="azul">Azul</li>
+		<li class="rojo">Rojo</li>
+	</ul>
+</body>
+</html>
