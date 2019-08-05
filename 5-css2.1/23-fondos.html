@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fondos </title>
+    <style>
+        body {
+            background: url(imgs/celu.png);
+            background-attachment: scroll;
+        }
+        h1,h3,h4 {
+            background-color: #fff;
+            padding: 20px;
+            margin: 4px auto;
+            text-align: center;
+            width: 760px;
+        }
+        section.bg {
+            border: 2px solid #333;
+            height: 400px;
+            margin: 20px auto;
+            width: 800px;
+        }
+        section.bg1 {
+            background-color: rgb(255, 174, 0);
+            
+        }
+        section.bg2 {
+            background-image: url(imgs/bgc.png);
+        }
+        section.bg3,
+        section.bg4,
+        section.bg5,
+        section.bg6,
+        section.bg7,
+        section.bg8,
+        section.bg9 {
+            background-image: url(imgs/200.gif);
+            background-repeat: no-repeat;
+        }
+        section.bg3 { background-repeat: repeat; }
+        section.bg4 { background-repeat: repeat-x; }
+        section.bg5 { background-repeat: repeat-y; }
+        section.bg6 { background-repeat: no-repeat; }
+
+        section.bg7 { background-position: top left; }
+        section.bg8 { background-position: center center; }
+        section.bg9 { background-position: bottom right; }
+
+        section.bg10 
+        section.bg11 { 
+        /* Forma Corta */
+            background: transparent url(imgs/200.gif) repeat;
+            overflow: scroll;
+        }
+
+        section.bg10 p,
+        section.bg11 p {
+            background-color: #000000;
+            color:#fff;
+            padding: 20px;
+        }
+        section.bg10 { background-position: scroll; }
+        section.bg11 { background-position: fixed; }
+
+    </style>
+</head>
+<body>
+    <h1>Fondos</h1>
+    <h3>Color de Fondo:</h3>
+    <section class="bg bg1"></section>
+    <h3>Imagen de Fondo:</h3>
+    <section class="bg bg2"></section>
+    <h3>Repetir de Fondo:</h3>
+    <h4>Repetir </h4>
+    <section class="bg bg3"></section>
+    <h4>Repetir X</h4>
+    <section class="bg bg4"></section>
+    <h4>Repetir Y</h4>
+    <section class="bg bg5"></section>
+    <h4>No Repetir </h4>
+    <section class="bg bg6"></section>
+    <h3> Posicion Fondo:</h3>
+    <h4>Top Left</h4>
+    <section class="bg bg7"></section>
+    <h4>Center Center</h4>
+    <section class="bg bg8"></section>
+    <h4>Bottom Right</h4>
+    <section class="bg bg9"></section>
+</body>
+</html>
