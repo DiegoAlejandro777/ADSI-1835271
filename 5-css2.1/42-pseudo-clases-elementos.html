@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>pseudo (Clases-Elementos)</title>
+    <style>
+        body {
+            font: 16px Arial
+        }
+        nav.links {
+            margin: 10px auto;
+            width: 600px;
+        }
+        nav.links a {
+            display: inline-block;
+            width: 125px;
+        }
+        nav.links a:link:first-child {
+            color:#ffd03f;
+        }
+        nav.links a:link, 
+        nav.links a:visited{
+            background-color: #00a687;
+            border-bottom: 10px solid #0b5244;
+            color: #0b5244;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none
+        }
+        
+        nav.links a:hover {
+            background-color: #0b5244;
+            border-bottom: #00a687;
+            color: #00a687;
+        }
+        nav.links a:active {
+            background-color: red;
+            border-bottom: 10px solid maroon;
+            color: maroon;
+        }
+        input.input {
+            border: 1px solid #00a687;
+            outline: none;
+            padding: 10px;
+        }
+        input.input:focus {
+            background-color: #c5ffe6;
+            border: 1px dotted #0b5244;
+        }
+        p{
+            margin: 10px auto;
+            padding: 10px;
+            width: 600px;
+        }
+        p:first-letter {
+            color: #0b5244;
+            font-size: 5em;
+        }
+        p:first-line {
+            background-color: #c5ffe6;
+            text-decoration: line-through;
+        }
+        div.box {
+            background-color: #5bcaff;
+            height: 200px;
+            width: 200px;
+        }
+        div.box:before {
+            background-color: orange;
+            content:"";
+            position: absolute;
+            left: 20px;         
+            width: 200px;  
+            height: 200px;          
+        }
+        div.box:after {
+            background-color: greenyellow;
+            content:"";
+            position: absolute;
+            left: 30px;
+            width: 200px;  
+            height: 200px;          
+        }
+    </style>
+</head>
+<body>
+	<main>
+        <h1>Pseudo (Clases/Elementos)</h1>
+        <h4>Enlaces (Link, visited, active, hover) (first-shild)</h4>
+        <nav class="links">
+            <a href="javascript:;">Home</a>
+            <a href="javascript:;">About Us</a>
+            <a href="javascript:;">Services</a>
+            <a href="javascript:;">Contacts Us</a>
+        </nav>
+        <h4>Elemento de Entrada Formulario (focus)</h4>
+        <input type="text" class="input" placeholder="Correo Electronido">
+        <h4>Primra Letra/Linea</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo delectus fugit deleniti reiciendis, mollitia amet earum similique consequatur cupiditate quam distinctio? Voluptate hic illum maxime tempora necessitatibus perspiciatis velit.
+        </p>
+        <h4>Antes/Despues</h4>
+        <div class="box"></div>
+    </main>
+</body>
+</html>
