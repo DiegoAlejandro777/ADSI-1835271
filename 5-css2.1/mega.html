@@ -8,15 +8,19 @@
 	<style>
 		section#mega {
 			border: 1px solid blue;
-			background: url(imgs/mega.png) no-repeat;
+			background: url(imgs/mega.png) -2px -5px;
 			height: 60px;
             margin: 40px auto;
             width: 60px;
 		}		
 		section#mega.sp1 { 	background-position: -2px -5px; }
-		section#mega.sp2 { 	background-position: -66px -5px; }
-		
-		
+		section#mega.sp2 { 	background-position: -66px -7px; }
+		section#mega.sp3 { 	background-position: -130px -5px; }
+		section#mega.sp4 { 	background-position: -194px -7px; }
+
+		section#mega.sp5 { 	background-position: -5px -69px; }
+		section#mega.sp6 { 	background-position: -69px -71px; }
+
 
 	</style>
 </head>
@@ -26,7 +30,7 @@
 		<section id="mega"></section>
 	</main>
 	 <script>
-        var sp = document.getElementById('sprite');
+        var sp = document.getElementById('mega');
         var ct = 1;
         var si = setInterval(function() {
             if(ct == 13){

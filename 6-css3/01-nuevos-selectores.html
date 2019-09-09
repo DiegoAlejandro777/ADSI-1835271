@@ -15,6 +15,37 @@
 			background-color: #7ab862;
 			color: #3e5E35
 		}
+		/*li:nth-child(3) */
+		ul.databases li:nth-child(3) {
+			background-color: #7ab862;
+			color: #3e5E35
+		}
+		nav a:link,
+		nav a:visited{
+			color: #1d4e6f
+		}
+
+		/* article#home:target */	
+		article {
+			display: none
+		}
+		article#home:target, 
+		article#services:target, 
+		article#contact:target { 
+			background-color: #7ab862;
+			color: #3e5E35;
+			display: block;
+		}
+		/* ::selection */
+		p.yellow::selection{
+			background-color: yellow;
+		}
+		p.blue::selection{
+			background-color: blue;
+		}
+		p.red::selection{
+			background-color: red;
+		}
 	</style>
 </head>
 <body>
@@ -35,6 +66,42 @@
 				<li>CSS</li>
 				<li>JS</li>			
 			</ul>
+			<h3>Li:nth-child(n) (Selecciona el elemento numero n) </h3>
+			<ul class="databases">
+				<li>MySQL</li>
+				<li>Maria DB</li>
+				<li>Postgres</li>
+				<li>SQL Server</li>
+				<li>Oracle</li>
+			</ul>
+			<h3>section: target (Selecciona el ancla activa)</h3>
+			<nav>
+				<a href="#home">Home</a> |
+				<a href="#services">Services</a> |
+				<a href="#contact">Contact</a>
+			</nav>
+			<article id="home">
+				<h4>Home</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aperiam necessitatibus velit, officia dicta a quibusdam fugiat sequi modi nesciunt quisquam reprehenderit totam ipsam earum amet, iusto nam ut! Id.</p>
+			</article>
+			<article id="services">
+				<h4>Services</h4>
+				<p>Ipsum architecto nostrum voluptatem voluptates iste quo dolorem reprehenderit placeat enim iure fugit eum dolore maxime eligendi, vero commodi nemo, labore debitis ad provident. Excepturi quidem neque consequuntur accusamus vero?</p>
+			</article>
+			<article id="contact">
+				<h4>Contact</h4>
+				<p>Alias pariatur ducimus magni iste. Odit deleniti fugit quaerat. Officia natus, inventore illo quia similique commodi quibusdam voluptate, quasi, sequi esse maxime minima amet iure. Nemo nisi necessitatibus officiis mollitia?</p>
+			</article>
+			<h3>::selection (Seleccion del usuario)</h3>
+			<p class="yellow">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error laboriosam hic ipsam minus. Doloremque ullam ipsa numquam possimus, quod repellendus totam atque commodi aliquam debitis eos ab corrupti quidem.
+			</p>
+			<p class="blue">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error laboriosam hic ipsam minus. Doloremque ullam ipsa numquam possimus, quod repellendus totam atque commodi aliquam debitis eos ab corrupti quidem.
+			</p>
+			<p class="red">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error laboriosam hic ipsam minus. Doloremque ullam ipsa numquam possimus, quod repellendus totam atque commodi aliquam debitis eos ab corrupti quidem.
+			</p>
 		</section>
 	</main>
 </body>
