@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        section{
+            background: url(imgs/game.jpg) no-repeat center;
+            background-size: cover;
+            position: relative;
+            height: 480px;
+            margin: 20px auto;
+            width: 800px;
+        }
+        div.dove {
+            background: url(imgs/pajaro.gif) no-repeat center;
+            height: 80px;
+            background-size: cover; 
+            position: absolute;
+            width: 120px;
+            animation: animDove 6s ease-in infinite;
+        }
+        div.cat {
+            background: url(imgs/gato.gif) no-repeat center;
+            height: 80px;
+            background-size: cover; 
+            position: absolute;
+            width: 120px;
+            animation: animCat 6s ease-in infinite;
+        }
+        @keyframes animDove{
+            0% { 
+                left: 0px;
+                top: 0px;
+                transform: rotateY(0deg);
+            }
+            50% { 
+                left: 300px; 
+                top: 400px;
+                transform: rotateY(0deg);
+            } 
+            51% { 
+                left: 300px;
+                top: 400px; 
+                transform: rotateY(180deg);
+            }
+            81% { 
+                left: 300px;
+                top: 400px; 
+                transform: rotateY(180deg);
+            }
+            82% { 
+                left: 300px;
+                top: 400px; 
+                transform: rotateY(180deg);
+            }
+            100% { 
+                left: 0px; 
+                top: 0px;
+
+                transform: rotateY(180deg);
+            }
+        }
+        @keyframes animCat{
+            0% { 
+                left: 600px;
+                top: 400px;
+                transform: rotateY(0deg);
+            }
+            50% { 
+                left: 300px; 
+                top: 400px;
+                transform: rotateY(0deg);
+            } 
+            51% { 
+                left: 300px;
+                top: 400px; 
+                transform: rotateY(180deg);
+            }
+            81% { 
+                left: 300px;
+                top: 400px; 
+                transform: rotateY(180deg);
+            }
+            82% { 
+                left: 300px;
+                top: 400px; 
+                transform: rotateY(180deg);
+            }
+            100% { 
+                left: 0px; 
+                top: 0px;
+
+                transform: rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Animaciones</h1>
+        </header>
+        <section>
+            <div class="dove"></div>
+            <div class="cat"></div>  
+        </section>
+    </main>
+</body>
+</html>
