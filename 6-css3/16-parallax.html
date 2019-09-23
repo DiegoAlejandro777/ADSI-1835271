@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        main{   
+            width: 1024px;  
+        }
+        div.parallax{    
+            height: 576px;
+            margin: 20px auto;
+            width: 1024px; 
+        }
+        div.parallax div.layer8{
+            background: url(imgs/layer_08.png);
+            height: 576px;
+            width: 1024px; 
+        }
+        div.parallax div.layer7{
+            background: url(imgs/layer_07.png);
+            height: 576px;
+            width: 1024px; 
+            margin-top:-576px;
+            position: relative;
+            animation: animParallax7 80s linear infinite;
+        }
+        div.parallax div.layer6{
+            background: url(imgs/layer_06.png);
+            height: 576px;
+            width: 1024px; 
+            margin-top:-576px;
+            animation: animParallax6 70s linear infinite;
+        }
+        div.parallax div.layer5{
+            background: url(imgs/layer_05.png);
+            height: 576px;
+            width: 1024px; 
+            margin-top:-576px;
+            animation: animParallax5 60s linear infinite;
+        }
+        div.parallax div.layer4{
+            background: url(imgs/layer_04.png);
+            height: 576px;
+            width: 1024px; 
+            margin-top:-576px;
+            animation: animParallax4 50s linear infinite;
+        }
+        div.parallax div.layer3{
+            background: url(imgs/layer_03.png);
+            height:576px;
+            width: 1024px; 
+            margin-top:-576px;
+            animation: animParallax3 40s linear infinite;
+        }
+        div.parallax div.layer2{
+            background: url(imgs/layer_02.png);
+            height: 576px;
+            width: 1024px; 
+            margin-top:-576px;
+            animation: animParallax2 30s linear infinite;
+        }
+        div.parallax div.layer1{
+            background: url(imgs/layer_01.png);
+            height: 576px;
+            width: 1024px; 
+            margin-top: -576px;
+            animation: animParallax1 20s linear infinite;
+        }
+        div.parallax div.layer0{
+            background: url(imgs/sasu.gif) no-repeat;
+            background-size: 200px;
+            height: 576px;
+            width: 1024px; 
+            margin-top: -260px; 
+            margin-left: 300px; 
+
+            animation: animParallax0 100s linear infinite;
+        }
+        div.parallax div.layer00{
+            background: url(imgs/naru.gif) no-repeat;
+            background-size: 520px;
+            height: 576px;
+            width: 1024px; 
+            margin-top: -735px; 
+            margin-left: -320px; 
+            transform: rotateY(180deg); 
+            animation: animParallax00 100s linear infinite;
+        }
+        @keyframes animParallax7 {                   
+           100%{
+            background-position: -2048px; 
+            top: 0px;
+           }      
+        }
+        @keyframes animParallax6 {                   
+           100%{
+            background-position: -2048px; 
+            top: 0px;
+           }      
+        }
+        @keyframes animParallax5 {                   
+           100%{
+            background-position: -2048px; 
+            top: 0px;
+           }      
+        }
+        @keyframes animParallax4 {                   
+           100%{
+            background-position: -2048px; 
+            top: 0px;
+           }      
+        }
+        @keyframes animParallax3 {                   
+           100%{
+            background-position: -2048px; 
+            top: 0px;
+           }      
+        }
+        @keyframes animParallax2 {                   
+           100%{
+            background-position: -2048px; 
+            top: 0px;
+           }      
+        }
+        @keyframes animParallax1 {                   
+           100%{
+            background-position: -2048px; 
+            top: 0px;
+           }      
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Parallax</h1>
+        </header>
+        <section>
+            <div class="parallax">
+                <div class="layer8"></div>
+                <div class="layer7"></div>
+                <div class="layer6"></div>
+                <div class="layer5"></div>
+                <div class="layer4"></div>
+                <div class="layer3"></div>
+                <div class="layer2"></div>
+                <div class="layer1"></div> 
+                <div class="layer0"></div> 
+                <div class="layer00"></div> 
+            </div>
+        </section>
+    </main>
+</body>
+</html>

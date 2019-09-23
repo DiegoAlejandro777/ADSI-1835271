@@ -9,47 +9,206 @@
         body{
             background-color: #000;
         }
-     div.box{
-         border: 5px solid gray;
-         height: 400px;
-         margin: 0px auto;
-         width: 1025px;
-     }
-     div.box1{
-         background: url(imgs/los.png)no-repeat center;
-     }
-     div.box2 div.box5{
-         background: url(imgs/md.jpg);
-        display: inline-block;
-         border: 3px solid gray;
-         height: 230px;
-         width: 230px
-     }
-     div.box2 div.box6{
-        background: url(imgs/escanor.jfif);
-        display: inline-block;
-         border: 3px solid gray;
-         height: 230px;
-         width: 230px;
-     }
-     div.box2 div.box7{
-        background: url(imgs/eli.jfif);
-        display: inline-block;
-         border: 3px solid gray;
-         height: 230px;
-         width: 230px;
-     }
-     div.box2 div.box8{
-        display: inline-block;
-         border: 3px solid gray;
-         height: 230px;
-         width: 230px;
-     }
+        div.box{
+            border: 2.5px solid white;
+            height: 400px;
+            margin: 0px auto;
+            width: 1025px;
+        }
+        div.box1{  
+            background: url(imgs/los.png)no-repeat center;
+            transition: all 1s linear;
+
+        }
+        div.box2 div.box5{
+            background: url(imgs/meliodass1.jpg);
+            display: inline-block;
+            border: 3px solid gray;
+            height: 230px;
+            width: 247.5px
+        }
+        div.box2 div.box5:hover{
+            background: url(imgs/meliodass2.PNG);
+            transition: all 1s linear;
+        }
+        div.box2 div.box6{
+            background: url(imgs/escanor.jpg);
+            display: inline-block;
+            border: 3px solid gray;
+            height: 230px;
+            width: 247.5px;
+        }
+        div.box2 div.box6:hover{
+            background: url(imgs/escanor2.jpg);
+            transition: all 1s linear;
+        }
+        div.box2 div.box7{
+            background: url(imgs/Elizabeth.jpg);
+            display: inline-block;
+            border: 3px solid gray;
+            height: 230px;
+            width: 247.5px;
+        }
+        div.box2 div.box7:hover{
+            background: url(imgs/Elizabeth2.jpg);
+            transition: all 1s linear;
+        }
+        div.box2 div.box8{
+            background: url(imgs/king.jpg);
+            display: inline-block;
+            border: 3px solid gray;
+            height: 230px;
+            width: 246.5px;
+        }
+        div.box2 div.box8:hover{
+            background: url(imgs/king2.jpg);
+            transition: all 1s linear;
+        }
+        div.box3{
+            background: url("imgs/meliodass3.png") no-repeat;
+            background-size: contain; 
+            color:white;        
+        }
+        div.box3 p{
+            font-family: 'Courier New', Courier, monospace;
+            text-align:justify;
+            margin-left: 350px;       
+        }
+        div.box4{
+            background: url("imgs/elizabethh.png") no-repeat;
+            background-size: contain; 
+            color: white;        
+        }
+        div.box4 p{
+            font-family: 'Courier New', Courier, monospace;
+            text-align:justify;
+            margin-left: 350px;       
+        }
+        main p{
+                line-height: 1.8em;
+                text-align: justify;
+        }
+        main h1 small.bp{
+            text-align: center;
+            color: white;
+            
+        }
+         main h1 small.bp2,
+        main h1 small.bp3 {
+            display: none;
+        }
+      @media (max-width: 1024px){
+            div{
+                width:700px;
+            }
+            div.box1{ 
+                background: url(imgs/los3.jpg) no-repeat center;
+                height: 400px;
+                width: 800px;
+            }
+            div.box2{
+               height: 520px;
+                width: 520px; 
+            }
+            div.box2 div.box5{
+                height: 250px;
+                width: 250px;
+            }
+             div.box2 div.box6{
+                height: 250px;
+                width: 250px;
+            }
+            div.box2 div.box7{
+                height: 250px;
+                width: 250px;
+            } 
+            div.box2 div.box8{
+                height: 250px;
+                width: 250px;
+            }
+             div.box3{
+               height: 400px;
+                width: 800px;
+             } 
+            div.box4{
+            height: 400px;
+            width: 800px;
+            }  
+            main h1 small.bp1,
+            main h1 small.bp3{
+                display: none;
+            }  
+            main h1 small.bp2{
+                display: inline;
+            }  
+      }
+       @media (max-width: 720px){
+            main{
+                width: 370px;
+            }
+            div.box1{ 
+            background: url(imgs/los4.jpg) no-repeat center;
+            height: 200px;
+            width: 600px;
+            }
+            
+            div.box2{
+            height: 642px;
+            width: 155px; 
+            margin-left: 240px;
+
+            }
+            div.box2 div.box5{
+            height: 150px;
+            width: 150px;
+        }
+            div.box2 div.box6{
+            height: 150px;
+            width: 150px;
+        }
+        div.box2 div.box7{
+            height: 150px;
+            width: 150px;
+        } 
+        div.box2 div.box8{
+            height: 150px;
+            width: 150px;
+        }
+            div.box3{
+            height: 300px;
+            width: 600px;
+            } 
+            div.box3 p{
+            margin-left: 300px;
+            text-align:justify;
+            }
+            div.box4{
+            height: 300px;
+            width: 600px;
+            }
+            div.box4 p{         
+            margin-left: 300px;
+            text-align:justify;
+            
+        } 
+            main h1 small.bp2,
+            main h1 small.bp3 {
+                display: none;
+            }
+            main h1 small.bp3{
+            display: inline;
+                
+        }      
+    }     
     </style>
 </head>
 <body>
     <main>
-        <h1></h1>
+        <h1>
+            <small class="bp bp1">( Desktop: 1024px )</small>
+            <small class="bp bp2">( Tablet: 800px )</small> 
+            <small class="bp bp3">( Mobile: 400px )</small>
+        </h1>
         <figure class="logo"></figure>  
         <section>
             <h3></h3>
@@ -61,10 +220,14 @@
                 <div class="box7"></div>
                 <div class="box8"></div>
             </div>
+            <h3></h3>         
+            <div class="box box3">
+                <p>es el líder de los Siete Pecados Capitales. Él es el protagonista masculino de la historia, su pecado es la Ira y su símbolo el Dragón, también es el propietario del Boar Hat. Su tesoro sagrado es la Espada Demoníaca Lostvayne y su poder inherente es Full Counter.</p>
+            </div>>
             <h3></h3>
-            <div class="box box3"></div>
-            <h3></h3>
-            <div class="box box4"></div>
+            <div class="box box4">
+                <p>Elizabeth se refiere a cualquier miembro de los Siete Pecados Capitales con "Lord" o "Lady" como forma de respeto. Mientras dirigía el Boar Hat, Elizabeth reveló que su cocina podía ser peor que la de Meliodas, a pesar de lucir bien.</p>                
+            </div>
         </section>
     </main>
 </body>
